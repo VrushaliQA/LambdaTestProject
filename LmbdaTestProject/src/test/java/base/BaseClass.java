@@ -12,6 +12,8 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -57,10 +59,10 @@ public class BaseClass {
 		{
 			 WebDriverManager.chromedriver().setup();
 			 ChromeOptions options=new ChromeOptions();
-			 //options.addArguments("window-size=1400,800");
+			 options.addArguments("window-size=1400,800");
 			 options.addArguments("headless");
-			 driver=new ChromeDriver();
-			
+			 driver=new ChromeDriver(options);
+			 //driver=new ChromeDriver();
 //			ChromeOptions browserOptions = new ChromeOptions();
 //			browserOptions.setPlatformName("Windows 10");
 //			browserOptions.setBrowserVersion("106.0");
@@ -81,13 +83,14 @@ public class BaseClass {
 			
 			 
 		}
-		else if(browser.equalsIgnoreCase("firefox"))
+		else if(browser.equalsIgnoreCase("edge"))
 		{
-			 WebDriverManager.firefoxdriver().setup();
-			 FirefoxOptions options=new FirefoxOptions();
-			 //options.addArguments("window-size=1400,800");
+			 WebDriverManager.edgedriver().setup();
+			 EdgeOptions options=new EdgeOptions();
+			 options.addArguments("window-size=1400,800");
 			 options.addArguments("headless");
-			 driver=new FirefoxDriver();
+			 driver=new EdgeDriver(options);
+			 //driver=new EdgeDriver();
 			
 //			FirefoxOptions browserOptions = new FirefoxOptions();
 //			browserOptions.setPlatformName("Windows 10");
@@ -114,11 +117,11 @@ public class BaseClass {
 //	        } catch (Exception e) {
 //	            System.out.println(e.getMessage());
 	        }
-		// driver.manage().deleteAllCookies();
-		// driver.manage().window().maximize();
+//		 driver.manage().deleteAllCookies();
+//		 driver.manage().window().maximize();
 //		 driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(TimeOutsProvider.PAGETIMEOUT));
 //		 driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(TimeOutsProvider.IMPLICITETIMEOUT));
-		driver.get(prop.getProperty("url"));
+		 driver.get(prop.getProperty("url"));
 		 return driver;
 	}
 }

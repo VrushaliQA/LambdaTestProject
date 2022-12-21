@@ -10,7 +10,11 @@ import org.testng.annotations.Test;
 import base.BaseClass;
 import pages.FirstPage;
 
-
+/**
+ * This Class has Test methods related to First page
+ * @author Vrushali
+ *
+ */
 public class FirstPageTest extends BaseClass {
 
 	private WebDriver driver;
@@ -22,14 +26,15 @@ public class FirstPageTest extends BaseClass {
 		
 	}
 	
+	/*
+	 * This method does the necessary work like creating WebDriver instance and opening the base page URL
+	 */
 	@Parameters("Browser")
 	@BeforeMethod
 	void initFirstPage(String browser)
 	{
 		driver=initWebdriver(browser);
-		objFirstPage=new FirstPage(driver);
-		//driver.get(prop.getProperty("url"));
-		
+		objFirstPage=new FirstPage(driver);		
 	}
 	
 	@Test
@@ -37,7 +42,13 @@ public class FirstPageTest extends BaseClass {
 	{
 		objFirstPage.clickOnSignUp();
 		System.out.println("SignUpPageOpened");
-		logger.info("SignUp Page Opened");
+		logger.trace("SignUp Page Opened");
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	

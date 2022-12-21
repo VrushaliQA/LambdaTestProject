@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="24" total="26" passed="2" failed="0" skipped="0">
+<testng-results ignored="2" total="28" passed="22" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-05T16:40:21 IST" name="Suite" finished-at="2022-12-05T16:40:37 IST" duration-ms="15746">
+  <suite started-at="2022-12-21T16:04:50 IST" name="Suite" finished-at="2022-12-21T16:06:42 IST" duration-ms="112389">
     <groups>
     </groups>
-    <test started-at="2022-12-05T16:40:21 IST" name="TestChrome" finished-at="2022-12-05T16:40:33 IST" duration-ms="12208">
+    <test started-at="2022-12-21T16:04:50 IST" name="TestChrome" finished-at="2022-12-21T16:06:22 IST" duration-ms="92377">
       <class name="tests.RegisterPageTest">
-        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@533bda92]" started-at="2022-12-05T16:40:23 IST" name="initRegisterPage" finished-at="2022-12-05T16:40:31 IST" duration-ms="8406" status="PASS">
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:04:51 IST" name="initRegisterPage" finished-at="2022-12-21T16:04:57 IST" duration-ms="5872" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initRegisterPage -->
-        <test-method signature="withoutAcceptingTerms(org.apache.poi.ss.usermodel.Row)[pri:0, instance:tests.RegisterPageTest@533bda92]" started-at="2022-12-05T16:40:31 IST" name="withoutAcceptingTerms" data-provider="RegistrationData" finished-at="2022-12-05T16:40:33 IST" duration-ms="2037" status="PASS">
+        <test-method signature="providingBlankPhoneNumber(org.apache.poi.ss.usermodel.Row)[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:04:57 IST" name="providingBlankPhoneNumber" data-provider="RegistrationData" finished-at="2022-12-21T16:04:58 IST" duration-ms="892" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,13 +27,13 @@
     <main:v>0</main:v>
   </main:c>
   <main:c r="B1" s="1" t="s">
-    <main:v>4</main:v>
+    <main:v>1</main:v>
   </main:c>
   <main:c r="C1" t="s">
     <main:v>2</main:v>
   </main:c>
-  <main:c r="D1">
-    <main:v>123456789</main:v>
+  <main:c r="D1" t="s">
+    <main:v>5</main:v>
   </main:c>
 </xml-fragment>]]>
               </value>
@@ -41,27 +41,388 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- withoutAcceptingTerms -->
-        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@533bda92]" started-at="2022-12-05T16:40:33 IST" name="tearDownRegisterPage" finished-at="2022-12-05T16:40:33 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- providingBlankPhoneNumber -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:04:58 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:04:58 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownRegisterPage -->
-      </class> <!-- tests.RegisterPageTest -->
-    </test> <!-- TestChrome -->
-    <test started-at="2022-12-05T16:40:21 IST" name="TestFireFox" finished-at="2022-12-05T16:40:37 IST" duration-ms="15746">
-      <class name="tests.RegisterPageTest">
-        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@7bbc8656]" started-at="2022-12-05T16:40:23 IST" name="initRegisterPage" finished-at="2022-12-05T16:40:36 IST" duration-ms="13208" status="PASS">
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:04:58 IST" name="initRegisterPage" finished-at="2022-12-21T16:05:02 IST" duration-ms="4468" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initRegisterPage -->
-        <test-method signature="withoutAcceptingTerms(org.apache.poi.ss.usermodel.Row)[pri:0, instance:tests.RegisterPageTest@7bbc8656]" started-at="2022-12-05T16:40:36 IST" name="withoutAcceptingTerms" data-provider="RegistrationData" finished-at="2022-12-05T16:40:37 IST" duration-ms="785" status="PASS">
+        <test-method signature="providingShortPassword(org.apache.poi.ss.usermodel.Row)[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:02 IST" name="providingShortPassword" data-provider="RegistrationData" finished-at="2022-12-21T16:05:03 IST" duration-ms="1045" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[<xml-fragment r="1" spans="1:4" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:main="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <main:c r="A1" t="s">
+    <main:v>0</main:v>
+  </main:c>
+  <main:c r="B1" s="1" t="s">
+    <main:v>1</main:v>
+  </main:c>
+  <main:c r="C1" t="s">
+    <main:v>6</main:v>
+  </main:c>
+  <main:c r="D1">
+    <main:v>123456789</main:v>
+  </main:c>
+</xml-fragment>]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- providingShortPassword -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:03 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:05:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:03 IST" name="initRegisterPage" finished-at="2022-12-21T16:05:08 IST" duration-ms="4753" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method signature="providingValidRegistrationData(org.apache.poi.ss.usermodel.Row)[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:08 IST" name="providingValidRegistrationData" data-provider="RegistrationData" finished-at="2022-12-21T16:05:10 IST" duration-ms="1562" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[<xml-fragment r="1" spans="1:4" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:main="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <main:c r="A1" t="s">
+    <main:v>0</main:v>
+  </main:c>
+  <main:c r="B1" s="1" t="s">
+    <main:v>4</main:v>
+  </main:c>
+  <main:c r="C1" t="s">
+    <main:v>2</main:v>
+  </main:c>
+  <main:c r="D1">
+    <main:v>123456789</main:v>
+  </main:c>
+</xml-fragment>]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://accounts.lambdatest.com/email/verify] but found [https://accounts.lambdatest.com/register]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://accounts.lambdatest.com/email/verify] but found [https://accounts.lambdatest.com/register]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at tests.RegisterPageTest.providingValidRegistrationData(RegisterPageTest.java:219)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- providingValidRegistrationData -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:10 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:05:10 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:10 IST" name="initRegisterPage" finished-at="2022-12-21T16:05:15 IST" duration-ms="5028" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method signature="providingblankEmail(org.apache.poi.ss.usermodel.Row)[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:15 IST" name="providingblankEmail" data-provider="RegistrationData" finished-at="2022-12-21T16:05:18 IST" duration-ms="2871" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[<xml-fragment r="1" spans="1:4" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:main="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <main:c r="A1" t="s">
+    <main:v>0</main:v>
+  </main:c>
+  <main:c r="B1" s="1" t="s">
+    <main:v>5</main:v>
+  </main:c>
+  <main:c r="C1" t="s">
+    <main:v>2</main:v>
+  </main:c>
+  <main:c r="D1">
+    <main:v>123456789</main:v>
+  </main:c>
+</xml-fragment>]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- providingblankEmail -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:18 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:05:18 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:18 IST" name="initRegisterPage" finished-at="2022-12-21T16:05:22 IST" duration-ms="4344" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method signature="providingblankUserName(org.apache.poi.ss.usermodel.Row)[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:22 IST" name="providingblankUserName" data-provider="RegistrationData" finished-at="2022-12-21T16:05:25 IST" duration-ms="3043" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[<xml-fragment r="1" spans="1:4" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:main="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <main:c r="A1" t="s">
+    <main:v>3</main:v>
+  </main:c>
+  <main:c r="B1" s="1" t="s">
+    <main:v>1</main:v>
+  </main:c>
+  <main:c r="C1" t="s">
+    <main:v>2</main:v>
+  </main:c>
+  <main:c r="D1">
+    <main:v>123456789</main:v>
+  </main:c>
+</xml-fragment>]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- providingblankUserName -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:25 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:05:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:25 IST" name="initRegisterPage" finished-at="2022-12-21T16:05:31 IST" duration-ms="6377" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method signature="testFunctionalFieldCompnyName()[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:31 IST" name="testFunctionalFieldCompnyName" finished-at="2022-12-21T16:05:32 IST" duration-ms="164" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at tests.RegisterPageTest.testFunctionalFieldCompnyName(RegisterPageTest.java:60)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFunctionalFieldCompnyName -->
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:32 IST" name="initRegisterPage" finished-at="2022-12-21T16:05:37 IST" duration-ms="5553" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:32 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:05:32 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+        <test-method signature="testFunctionalFieldDesiredPassword()[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:37 IST" name="testFunctionalFieldDesiredPassword" finished-at="2022-12-21T16:05:39 IST" duration-ms="2074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFunctionalFieldDesiredPassword -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:39 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:05:39 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:39 IST" name="initRegisterPage" finished-at="2022-12-21T16:05:45 IST" duration-ms="5544" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method signature="testFunctionalFieldEmailId()[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:45 IST" name="testFunctionalFieldEmailId" finished-at="2022-12-21T16:05:47 IST" duration-ms="2041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFunctionalFieldEmailId -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:47 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:05:47 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:47 IST" name="initRegisterPage" finished-at="2022-12-21T16:05:52 IST" duration-ms="4848" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method signature="testFunctionalFieldFreeSignUp()[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:52 IST" name="testFunctionalFieldFreeSignUp" finished-at="2022-12-21T16:05:54 IST" duration-ms="2042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFunctionalFieldFreeSignUp -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:54 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:05:54 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:54 IST" name="initRegisterPage" finished-at="2022-12-21T16:05:59 IST" duration-ms="5041" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method signature="testFunctionalFieldFullName()[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:05:59 IST" name="testFunctionalFieldFullName" finished-at="2022-12-21T16:06:01 IST" duration-ms="2048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFunctionalFieldFullName -->
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:06:01 IST" name="initRegisterPage" finished-at="2022-12-21T16:06:05 IST" duration-ms="4486" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:06:01 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:06:01 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+        <test-method signature="testFunctionalFieldPhoneNumber()[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:06:05 IST" name="testFunctionalFieldPhoneNumber" finished-at="2022-12-21T16:06:07 IST" duration-ms="2151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFunctionalFieldPhoneNumber -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:06:07 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:06:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:06:07 IST" name="initRegisterPage" finished-at="2022-12-21T16:06:14 IST" duration-ms="6347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method signature="testFunctionalFieldTermsAndPrivacyPolicy()[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:06:14 IST" name="testFunctionalFieldTermsAndPrivacyPolicy" finished-at="2022-12-21T16:06:16 IST" duration-ms="2083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFunctionalFieldTermsAndPrivacyPolicy -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:06:16 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:06:16 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:06:16 IST" name="initRegisterPage" finished-at="2022-12-21T16:06:21 IST" duration-ms="5345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method signature="withoutAcceptingTerms(org.apache.poi.ss.usermodel.Row)[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:06:21 IST" name="withoutAcceptingTerms" data-provider="RegistrationData" finished-at="2022-12-21T16:06:22 IST" duration-ms="1079" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,11 +446,458 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- withoutAcceptingTerms -->
-        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@7bbc8656]" started-at="2022-12-05T16:40:37 IST" name="tearDownRegisterPage" finished-at="2022-12-05T16:40:37 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@6f10d5b6]" started-at="2022-12-21T16:06:22 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:06:22 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownRegisterPage -->
       </class> <!-- tests.RegisterPageTest -->
-    </test> <!-- TestFireFox -->
+    </test> <!-- TestChrome -->
+    <test started-at="2022-12-21T16:04:50 IST" name="TestEdge" finished-at="2022-12-21T16:06:42 IST" duration-ms="112389">
+      <class name="tests.RegisterPageTest">
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:04:51 IST" name="initRegisterPage" finished-at="2022-12-21T16:04:58 IST" duration-ms="7397" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method signature="providingBlankPhoneNumber(org.apache.poi.ss.usermodel.Row)[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:04:58 IST" name="providingBlankPhoneNumber" data-provider="RegistrationData" finished-at="2022-12-21T16:04:59 IST" duration-ms="830" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[<xml-fragment r="1" spans="1:4" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:main="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <main:c r="A1" t="s">
+    <main:v>0</main:v>
+  </main:c>
+  <main:c r="B1" s="1" t="s">
+    <main:v>1</main:v>
+  </main:c>
+  <main:c r="C1" t="s">
+    <main:v>2</main:v>
+  </main:c>
+  <main:c r="D1" t="s">
+    <main:v>5</main:v>
+  </main:c>
+</xml-fragment>]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- providingBlankPhoneNumber -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:04:59 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:04:59 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:04:59 IST" name="initRegisterPage" finished-at="2022-12-21T16:05:05 IST" duration-ms="6348" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method signature="providingShortPassword(org.apache.poi.ss.usermodel.Row)[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:05:05 IST" name="providingShortPassword" data-provider="RegistrationData" finished-at="2022-12-21T16:05:06 IST" duration-ms="1007" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[<xml-fragment r="1" spans="1:4" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:main="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <main:c r="A1" t="s">
+    <main:v>0</main:v>
+  </main:c>
+  <main:c r="B1" s="1" t="s">
+    <main:v>1</main:v>
+  </main:c>
+  <main:c r="C1" t="s">
+    <main:v>6</main:v>
+  </main:c>
+  <main:c r="D1">
+    <main:v>123456789</main:v>
+  </main:c>
+</xml-fragment>]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- providingShortPassword -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:05:06 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:05:06 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:05:07 IST" name="initRegisterPage" finished-at="2022-12-21T16:05:13 IST" duration-ms="6248" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method signature="providingValidRegistrationData(org.apache.poi.ss.usermodel.Row)[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:05:13 IST" name="providingValidRegistrationData" data-provider="RegistrationData" finished-at="2022-12-21T16:05:14 IST" duration-ms="968" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[<xml-fragment r="1" spans="1:4" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:main="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <main:c r="A1" t="s">
+    <main:v>0</main:v>
+  </main:c>
+  <main:c r="B1" s="1" t="s">
+    <main:v>4</main:v>
+  </main:c>
+  <main:c r="C1" t="s">
+    <main:v>2</main:v>
+  </main:c>
+  <main:c r="D1">
+    <main:v>123456789</main:v>
+  </main:c>
+</xml-fragment>]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://accounts.lambdatest.com/email/verify] but found [https://accounts.lambdatest.com/register]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://accounts.lambdatest.com/email/verify] but found [https://accounts.lambdatest.com/register]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at tests.RegisterPageTest.providingValidRegistrationData(RegisterPageTest.java:219)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- providingValidRegistrationData -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:05:14 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:05:14 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:05:14 IST" name="initRegisterPage" finished-at="2022-12-21T16:05:20 IST" duration-ms="6282" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method signature="providingblankEmail(org.apache.poi.ss.usermodel.Row)[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:05:20 IST" name="providingblankEmail" data-provider="RegistrationData" finished-at="2022-12-21T16:05:23 IST" duration-ms="2804" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[<xml-fragment r="1" spans="1:4" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:main="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <main:c r="A1" t="s">
+    <main:v>0</main:v>
+  </main:c>
+  <main:c r="B1" s="1" t="s">
+    <main:v>5</main:v>
+  </main:c>
+  <main:c r="C1" t="s">
+    <main:v>2</main:v>
+  </main:c>
+  <main:c r="D1">
+    <main:v>123456789</main:v>
+  </main:c>
+</xml-fragment>]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- providingblankEmail -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:05:23 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:05:23 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:05:23 IST" name="initRegisterPage" finished-at="2022-12-21T16:05:32 IST" duration-ms="8618" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method signature="providingblankUserName(org.apache.poi.ss.usermodel.Row)[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:05:32 IST" name="providingblankUserName" data-provider="RegistrationData" finished-at="2022-12-21T16:05:35 IST" duration-ms="3029" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[<xml-fragment r="1" spans="1:4" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:main="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <main:c r="A1" t="s">
+    <main:v>3</main:v>
+  </main:c>
+  <main:c r="B1" s="1" t="s">
+    <main:v>1</main:v>
+  </main:c>
+  <main:c r="C1" t="s">
+    <main:v>2</main:v>
+  </main:c>
+  <main:c r="D1">
+    <main:v>123456789</main:v>
+  </main:c>
+</xml-fragment>]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- providingblankUserName -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:05:35 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:05:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:05:35 IST" name="initRegisterPage" finished-at="2022-12-21T16:05:41 IST" duration-ms="6532" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method signature="testFunctionalFieldCompnyName()[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:05:41 IST" name="testFunctionalFieldCompnyName" finished-at="2022-12-21T16:05:41 IST" duration-ms="121" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at tests.RegisterPageTest.testFunctionalFieldCompnyName(RegisterPageTest.java:60)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFunctionalFieldCompnyName -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:05:41 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:05:41 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:05:41 IST" name="initRegisterPage" finished-at="2022-12-21T16:05:48 IST" duration-ms="6761" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method signature="testFunctionalFieldDesiredPassword()[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:05:48 IST" name="testFunctionalFieldDesiredPassword" finished-at="2022-12-21T16:05:50 IST" duration-ms="2053" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFunctionalFieldDesiredPassword -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:05:50 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:05:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:05:50 IST" name="initRegisterPage" finished-at="2022-12-21T16:05:57 IST" duration-ms="6489" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method signature="testFunctionalFieldEmailId()[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:05:57 IST" name="testFunctionalFieldEmailId" finished-at="2022-12-21T16:05:59 IST" duration-ms="2055" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFunctionalFieldEmailId -->
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:05:59 IST" name="initRegisterPage" finished-at="2022-12-21T16:06:05 IST" duration-ms="6076" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:05:59 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:05:59 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+        <test-method signature="testFunctionalFieldFreeSignUp()[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:06:05 IST" name="testFunctionalFieldFreeSignUp" finished-at="2022-12-21T16:06:07 IST" duration-ms="2071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFunctionalFieldFreeSignUp -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:06:07 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:06:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:06:07 IST" name="initRegisterPage" finished-at="2022-12-21T16:06:14 IST" duration-ms="7631" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method signature="testFunctionalFieldFullName()[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:06:14 IST" name="testFunctionalFieldFullName" finished-at="2022-12-21T16:06:16 IST" duration-ms="2087" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFunctionalFieldFullName -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:06:16 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:06:16 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:06:16 IST" name="initRegisterPage" finished-at="2022-12-21T16:06:24 IST" duration-ms="7590" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method signature="testFunctionalFieldPhoneNumber()[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:06:24 IST" name="testFunctionalFieldPhoneNumber" finished-at="2022-12-21T16:06:26 IST" duration-ms="2042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFunctionalFieldPhoneNumber -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:06:26 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:06:26 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:06:26 IST" name="initRegisterPage" finished-at="2022-12-21T16:06:33 IST" duration-ms="6418" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method signature="testFunctionalFieldTermsAndPrivacyPolicy()[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:06:33 IST" name="testFunctionalFieldTermsAndPrivacyPolicy" finished-at="2022-12-21T16:06:35 IST" duration-ms="2039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFunctionalFieldTermsAndPrivacyPolicy -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:06:35 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:06:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:06:35 IST" name="initRegisterPage" finished-at="2022-12-21T16:06:41 IST" duration-ms="6455" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method signature="withoutAcceptingTerms(org.apache.poi.ss.usermodel.Row)[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:06:41 IST" name="withoutAcceptingTerms" data-provider="RegistrationData" finished-at="2022-12-21T16:06:42 IST" duration-ms="1183" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[<xml-fragment r="1" spans="1:4" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:main="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <main:c r="A1" t="s">
+    <main:v>0</main:v>
+  </main:c>
+  <main:c r="B1" s="1" t="s">
+    <main:v>4</main:v>
+  </main:c>
+  <main:c r="C1" t="s">
+    <main:v>2</main:v>
+  </main:c>
+  <main:c r="D1">
+    <main:v>123456789</main:v>
+  </main:c>
+</xml-fragment>]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withoutAcceptingTerms -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@1807f5a7]" started-at="2022-12-21T16:06:42 IST" name="tearDownRegisterPage" finished-at="2022-12-21T16:06:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+      </class> <!-- tests.RegisterPageTest -->
+    </test> <!-- TestEdge -->
   </suite> <!-- Suite -->
 </testng-results>

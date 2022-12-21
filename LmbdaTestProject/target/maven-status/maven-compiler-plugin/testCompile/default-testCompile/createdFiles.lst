@@ -1,0 +1,10 @@
+base\BaseClass.class
+commons\DataProviderForRegistration.class
+tests\FirstPageTest.class
+tests\RegisterPageTest.class
+utilities\ReadingXLS$1.class
+pages\RegisterPage.class
+pages\FirstPage.class
+utilities\ReadingXLS.class
+utilities\Utilities.class
+utilities\TimeOutsProvider.class

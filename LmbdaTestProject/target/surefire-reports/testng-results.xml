@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="24" total="26" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-06T18:12:28 IST" name="Suite" finished-at="2022-12-06T18:12:51 IST" duration-ms="22316">
+    <groups>
+    </groups>
+    <test started-at="2022-12-06T18:12:28 IST" name="TestChrome" finished-at="2022-12-06T18:12:38 IST" duration-ms="9324">
+      <class name="tests.RegisterPageTest">
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@702b8b12]" started-at="2022-12-06T18:12:29 IST" name="initRegisterPage" finished-at="2022-12-06T18:12:37 IST" duration-ms="7782" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method signature="withoutAcceptingTerms(org.apache.poi.ss.usermodel.Row)[pri:0, instance:tests.RegisterPageTest@702b8b12]" started-at="2022-12-06T18:12:37 IST" name="withoutAcceptingTerms" data-provider="RegistrationData" finished-at="2022-12-06T18:12:38 IST" duration-ms="755" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[<xml-fragment r="1" spans="1:4" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:main="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <main:c r="A1" t="s">
+    <main:v>0</main:v>
+  </main:c>
+  <main:c r="B1" s="1" t="s">
+    <main:v>4</main:v>
+  </main:c>
+  <main:c r="C1" t="s">
+    <main:v>2</main:v>
+  </main:c>
+  <main:c r="D1">
+    <main:v>123456789</main:v>
+  </main:c>
+</xml-fragment>]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withoutAcceptingTerms -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@702b8b12]" started-at="2022-12-06T18:12:38 IST" name="tearDownRegisterPage" finished-at="2022-12-06T18:12:38 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+      </class> <!-- tests.RegisterPageTest -->
+    </test> <!-- TestChrome -->
+    <test started-at="2022-12-06T18:12:28 IST" name="TestFireFox" finished-at="2022-12-06T18:12:51 IST" duration-ms="22316">
+      <class name="tests.RegisterPageTest">
+        <test-method is-config="true" signature="initRegisterPage(java.lang.String)[pri:0, instance:tests.RegisterPageTest@543588e6]" started-at="2022-12-06T18:12:29 IST" name="initRegisterPage" finished-at="2022-12-06T18:12:50 IST" duration-ms="20857" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initRegisterPage -->
+        <test-method signature="withoutAcceptingTerms(org.apache.poi.ss.usermodel.Row)[pri:0, instance:tests.RegisterPageTest@543588e6]" started-at="2022-12-06T18:12:50 IST" name="withoutAcceptingTerms" data-provider="RegistrationData" finished-at="2022-12-06T18:12:51 IST" duration-ms="680" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[<xml-fragment r="1" spans="1:4" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:main="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <main:c r="A1" t="s">
+    <main:v>0</main:v>
+  </main:c>
+  <main:c r="B1" s="1" t="s">
+    <main:v>4</main:v>
+  </main:c>
+  <main:c r="C1" t="s">
+    <main:v>2</main:v>
+  </main:c>
+  <main:c r="D1">
+    <main:v>123456789</main:v>
+  </main:c>
+</xml-fragment>]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- withoutAcceptingTerms -->
+        <test-method is-config="true" signature="tearDownRegisterPage()[pri:0, instance:tests.RegisterPageTest@543588e6]" started-at="2022-12-06T18:12:51 IST" name="tearDownRegisterPage" finished-at="2022-12-06T18:12:51 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownRegisterPage -->
+      </class> <!-- tests.RegisterPageTest -->
+    </test> <!-- TestFireFox -->
+  </suite> <!-- Suite -->
+</testng-results>

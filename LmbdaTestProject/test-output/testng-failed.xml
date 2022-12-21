@@ -6,23 +6,25 @@
     <classes>
       <class name="tests.RegisterPageTest">
         <methods>
+          <include name="testFunctionalFieldCompnyName"/>
           <include name="initRegisterPage"/>
+          <include name="providingValidRegistrationData" invocation-numbers="0"/>
           <include name="tearDownRegisterPage"/>
-          <include name="withoutAcceptingTerms" invocation-numbers="0"/>
         </methods>
       </class> <!-- tests.RegisterPageTest -->
     </classes>
   </test> <!-- TestChrome(failed) -->
-  <test thread-count="5" parallel="tests" name="TestFireFox(failed)">
-    <parameter name="Browser" value="firefox"/>
+  <test thread-count="5" parallel="tests" name="TestEdge(failed)">
+    <parameter name="Browser" value="edge"/>
     <classes>
       <class name="tests.RegisterPageTest">
         <methods>
+          <include name="testFunctionalFieldCompnyName"/>
           <include name="initRegisterPage"/>
+          <include name="providingValidRegistrationData" invocation-numbers="0"/>
           <include name="tearDownRegisterPage"/>
-          <include name="withoutAcceptingTerms" invocation-numbers="0"/>
         </methods>
       </class> <!-- tests.RegisterPageTest -->
     </classes>
-  </test> <!-- TestFireFox(failed) -->
+  </test> <!-- TestEdge(failed) -->
 </suite> <!-- Failed suite [Suite] -->

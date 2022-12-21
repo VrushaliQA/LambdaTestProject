@@ -65,9 +65,6 @@ public class DataProviderForRegistration {
 			  sheet=workbook.getSheet("ValidRegistrationData");
 		  }
 		  
-		  
-		  
-		
 		 Iterator<Row> rows= sheet.rowIterator();
 		 return rows;
 			

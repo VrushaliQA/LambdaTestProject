@@ -1,18 +1,21 @@
 package pages;
 
-import java.util.Iterator;
+import java.util.List;
 
-import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
 import utilities.ReadingXLS;
 
 
 public class RegisterPage {
 	private WebDriver driver;
+	
+	@FindBy(css="input[type='text']")
+	List<WebElement> textBoxes;
 	
 	@FindBy(id="name")
 	WebElement fullName;
@@ -55,6 +58,18 @@ public class RegisterPage {
 		this.driver = driver;
 	}
 	
+	public boolean companyNameFieldDisplayed()
+	{
+		for(WebElement e:textBoxes)
+		{
+			if(e.getAttribute("placeholder").contains("Company"))
+			{
+				 return true;
+			}
+		}
+			return false;
+		
+	}
 	public boolean fullNameFieldDisplayed()
 	{
 		return fullName.isDisplayed();
